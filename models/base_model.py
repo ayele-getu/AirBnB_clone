@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
-"""Module for Base class Contains the Base class for the AirBnB clone console."""
+"""
+Module for Base class Contains the 
+Base class for the AirBnB clone console.
+"""
 import uuid
 from datetime import datetime
 import models
