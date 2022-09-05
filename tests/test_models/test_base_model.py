@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+# -*- coding: utf-8 -*-
 """Tests for the BaseModel class"""
 import sys
 import unittest
