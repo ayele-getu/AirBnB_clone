@@ -55,5 +55,4 @@ class BaseModel:
                     new_dict[key] = values
         new_dict['__class__'] = self.__class__.__name__
 
-        return new_dict
-    
+        return new_dict    
