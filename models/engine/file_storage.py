@@ -10,6 +10,7 @@ import os
 
 class FileStorage:
     """ Class that serializes and deserializes JSON objects """
+    
     __file_path = "file.json"
     __objects = {}
 
@@ -34,6 +35,7 @@ class FileStorage:
 
     def reload(self):
         """ Deserializes __objects from the JSON file """
+        
         from models.base_model import BaseModel
         from models.user import User
         from models.place import Place
