@@ -3,7 +3,7 @@
 import json
 import os
 
-class FileStorage:
+class FileStorage():
     """ Class that serializes and deserializes JSON objects """
     __file_path = "file.json"
     __objects = {}
