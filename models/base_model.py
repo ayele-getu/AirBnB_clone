@@ -34,25 +34,14 @@ class BaseModel:
         return class_name + " (" + self.id + ") " + str(dct)
 
     def save(self):
-        """updates last update time
-        """
+        """updates."""
         self.updated_at = datetime.now()
-        storage.save()
+        models.storage.save()
 
     def to_dict(self):
-        """creates a new dictionary, adding a key and returning
-        datemtimes converted to strings
-        """
-        new_dict = {}
-
-        for key, values in self.__dict__.items():
-            if key == "created_at" or key == "updated_at":
-                new_dict[key] = values.strftime("%Y-%m-%dT%H:%M:%S.%f")
-            else:
-                if not values:
-                    pass
-                else:
-                    new_dict[key] = values
-        new_dict['__class__'] = self.__class__.__name__
-
+        """dictionary format"""
+        new_dict = dict(self.__dict__)
+        new_dict["__class__"] = type(self).__name__
+        new_dict["created_at"] = new_dict["created_at"].isoformat()
+        new_dict["updated_at"] = new_dict["updated_at"].isoformat()
         return new_dict
