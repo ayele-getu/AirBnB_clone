@@ -3,7 +3,6 @@
 Class that serializes instances to a JSON file
 and deserializes JSON file to instances
 """
-
 import json
 import os
 
@@ -25,7 +24,7 @@ class FileStorage:
     def save(self):
         """ Serializes __objects to the JSON file """
         dictionary = {}
-        
+
         for key, value in FileStorage.__objects.items():
             dictionary[key] = value.to_dict()
 
@@ -41,10 +40,9 @@ class FileStorage:
         from models.amenity import Amenity
         from models.state import State
         from models.review import Review
-
         dct = {'BaseModel': BaseModel, 'User': User, 'Place': Place,
-                'City': City, 'Amenity': Amenity, 'State': State,
-                'Review': Review}
+               'City': City, 'Amenity': Amenity, 'State': State,
+               'Review': Review}
 
         if os.path.exists(FileStorage.__file_path) is True:
             with open(FileStorage.__file_path, 'r') as f:
