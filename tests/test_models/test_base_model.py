@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 """
-Tests for the 
-BaseModel class
+Created on Fri Sep  2 15:43:09 2022
+@author: Ayele Getu and Gospel Isaac
 """
 import sys
 import unittest
