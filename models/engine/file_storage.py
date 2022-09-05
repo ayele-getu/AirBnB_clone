@@ -6,7 +6,14 @@ and deserializes JSON file to instances
 
 import json
 import os
-
+from models.base_model import BaseModel
+from models.user import User
+from models.place import Place
+from models.city import City
+from models.amenity import Amenity
+from models.state import State
+from models.review import Review
+        
 
 class FileStorage:
     """ Class that serializes and deserializes JSON objects """
@@ -34,15 +41,6 @@ class FileStorage:
 
     def reload(self):
         """ Deserializes __objects from the JSON file """
-        
-        from models.base_model import BaseModel
-        from models.user import User
-        from models.place import Place
-        from models.city import City
-        from models.amenity import Amenity
-        from models.state import State
-        from models.review import Review
-        
         dct = {'BaseModel': BaseModel, 'User': User, 'Place': Place, 'City': City, 'Amenity': Amenity, 'State': State, 'Review': Review}
         
         if os.path.exists(FileStorage.__file_path) is True:
