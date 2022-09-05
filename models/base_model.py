@@ -1,10 +1,5 @@
 #!/usr/bin/python3
-# -*- coding: utf-8 -*-
-"""
-Creation date: June 26, 2020
-Authors: Robinson Montes
-        Carlos Murcia
-"""
+"""Module for Base class Contains the Base class for the AirBnB clone console."""
 import uuid
 from datetime import datetime
 import models
