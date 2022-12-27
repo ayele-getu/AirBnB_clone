@@ -15,7 +15,7 @@ TThis is the first step towards building your first full web application: the Ai
 
 
 ## Environment :computer:
-The console was developed in Ubuntu 20.04LTS using python3 (version 3.8.5).
+The console was developed in Ubuntu 20.04 LTS using python3 (version 3.8.5).
 
 ### Further information :bookmark_tabs:
 For further information on python version, and documentation visit [python.org](https://www.python.org/).
