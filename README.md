@@ -21,7 +21,7 @@ The console was developed in Ubuntu 20.04LTS using python3 (version 3.8.5).
 For further information on python version, and documentation visit [python.org](https://www.python.org/).
 
 ## Requirements :memo:
-Knowledge in python3, how to use a command line interpreter, a computer with Ubuntu 14.04, python3 and pep8 style corrector.
+Knowledge in python3, how to use a command line interpreter, a computer with Ubuntu 20.04, python3 and pep8 style corrector.
 
 ## Repo Contents :clipboard:
 This repository constains the following files:
